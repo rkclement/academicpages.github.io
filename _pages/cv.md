@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+Download a PDF version of my CV [here](https://rkclement.github.io/files/2018_Ryan_Clement_CV.pdf).
+
 Education
 ======
 * Master of Science in Information, University of Michigan School of Information, 2012
