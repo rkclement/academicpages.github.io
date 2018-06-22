@@ -21,7 +21,7 @@ Education
 Work experience
 ======
 * **Data Services Librarian**
-  * Middlebury College, Middlebury, VT || September 2015 - Present*
+  * ###### Middlebury College, Middlebury, VT \| September 2015 - Present ######
     * Provide general research and technology assistance to students, faculty, and staff, and specialized assistance to those working with data, particularly in the social sciences and humanities.
     * Assist with projects involving finding, acquiring, managing, interpreting, analyzing, and visualizing both quantitative and qualitative data.
     * Provide leadership in planning, support, and implementation of digital scholarship support.
