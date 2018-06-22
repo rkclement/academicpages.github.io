@@ -11,16 +11,25 @@ redirect_from:
 
 Education
 ======
-* B.S. in Github, Github University, 2012
-* M.S. in Jekyll, Github University, 2014
-* Ph.D in Version Control Theory, Github University, 2018 (expected)
+* Master of Science in Information, University of Michigan School of Information, 2012
+  - Library & Information Science, Human-Computer Interaction
+* Master of Arts, Temple University, 2006
+  - Philosophy
+* Bachelor of Arts, University of Michigan, 2003
+  - Literature, Psychology
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Data Services Librarian
+  * Middlebury College, Middlebury, VT
+  * *September 2015 - Present*
+    * Provide general research and technology assistance to students, faculty, and staff, and specialized assistance to those working with data, particularly in the social sciences and humanities.
+    * Assist with projects involving finding, acquiring, managing, interpreting, analyzing, and visualizing both quantitative and qualitative data.
+    * Provide leadership in planning, support, and implementation of digital scholarship support.
+    * Create documentation, tutorials, and tools to support general and specialized research needs.
+    * Collaborate across departments to provide support for data-intensive research and teaching, including workshops, consultations, and review of research proposals and RDM strategies.
+    * Assist in the investigation and development of strategies, workflows, and policies for institutional research data curation.
+    * Serve as a liaison to economics, geography, sociology and anthropology, and philosophy departments, providing research and instruction support, collection development, and reference services for faculty and students in these departments.
 
 * Fall 2015: Research Assistant
   * Github University
@@ -38,7 +47,7 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
