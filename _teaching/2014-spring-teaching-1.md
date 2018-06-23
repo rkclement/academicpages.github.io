@@ -1,20 +1,13 @@
 ---
-title: "Teaching experience 1"
+title: "ACRL Assessment in Action"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "Workshop"
+permalink: /teaching/2017-teaching-1
+venue: "Vermont Technical College"
+date: 2017-11-03
+location: "Randolph, VT"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Identified methods for connecting assessment projects to institutional
+goals and communicating their results. Learned how to apply action research
+methodology to personal and institutional assessment projects.

@@ -42,13 +42,13 @@ Work experience
   
 Software & Coding Skills
 ======
-* Expert
+* **Expert**
   * Google Apps, LibGuides, MS Office, Zotero
-* Advanced
+* **Advanced**
   * Bash/Zsh, HTML, R/RStudio
-* Intermediate
+* **Intermediate**
   * CSS, EndNote, Illustrator, OpenRefine, Photoshop, Python, QGIS, Stata
-* Fundamentals
+* **Fundamentals**
   * ArcGis, Javascript, LaTeX, MySQL, NVivo, Omeka, PHP, Ruby, SPSS
 
 Publications
@@ -71,11 +71,11 @@ Professional Education
   
 Professional Affiliations
 ======
-* Since 2015
+* *Since 2015*
   * Digital Library Federation (DLF) - Institutional Member, active in annual conferences and other activities
-* Since 2014
+* *Since 2014*
   * International Association for Social Science Information Services & Technology (IASSIST)
   * Inter-uiversity Consoritum for Political and Social Research (ICPSR) - Official/Designated Representative
-* Since 2011
+* *Since 2011*
   * American Library Association (ALA)
   * Association of College & Research Libraries (ACRL)
