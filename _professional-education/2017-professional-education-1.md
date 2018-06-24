@@ -1,8 +1,8 @@
 ---
 title: "ACRL Assessment in Action"
-collection: teaching
+collection: professional-education
 type: "Workshop"
-permalink: /teaching/2017-teaching-1
+permalink: /professional-education/2017-professional-education-1
 venue: "Vermont Technical College"
 date: 2017-11-03
 location: "Randolph, VT"
