@@ -45,11 +45,11 @@ Software & Coding Skills
 * **Expert**
   * Google Apps, LibGuides, MS Office, Zotero
 * **Advanced**
-  * Bash/Zsh, HTML, R/RStudio
+  * Bash/Zsh, HTML, OpenRefine, R/RStudio
 * **Intermediate**
-  * CSS, EndNote, Illustrator, OpenRefine, Photoshop, Python, QGIS, Stata
+  * ArcGIS Online, CSS, EndNote, Illustrator, Photoshop, Python, QGIS, Tableau, Stata
 * **Fundamentals**
-  * ArcGis, Javascript, LaTeX, MySQL, NVivo, Omeka, PHP, Ruby, SPSS
+  * ArcGIS Pro, Javascript, LaTeX, Leaflet, MySQL, NVivo, Omeka, PHP, Ruby, SPSS
 
 Publications
 ======
