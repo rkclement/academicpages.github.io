@@ -9,7 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-Download a PDF version of my CV [here](https://rkclement.github.io/files/2018_Ryan_Clement_CV.pdf).
+{.btn}[Download a PDF version of my CV](https://rkclement.github.io/files/2018_Ryan_Clement_CV.pdf).
+
 
 Education
 ======
@@ -39,7 +40,7 @@ Work experience
     * Assisted researchers in data management planning and execution, including the review of grantrequired data management plans.
     * Investigated and developed strategies, workflows, and policies for institutional research data curation.
     * Served as a liaison to psychology and philosophy departments, providing research and instruction support, collection development, and reference services for faculty and students in these departments.
-  
+
 Software & Coding Skills
 ======
 * **Expert**
@@ -56,19 +57,19 @@ Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
+
 Professional Education
 ======
   <ul>{% for post in site.professional-education reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Professional Affiliations
 ======
 * *Since 2015*
