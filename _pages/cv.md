@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Download a PDF version of my CV](https://rkclement.github.io/files/2018_Ryan_Clement_CV.pdf).{:.btn}
+<p style="text-decoration:underline;"><a href="https://rkclement.github.io/files/2018_Ryan_Clement_CV.pdf">Download a PDF version of my CV</a></p>
 
 
 Education
