@@ -25,6 +25,8 @@ Work experience
 ======
 * **Data Services Librarian**
   * *Middlebury College, Middlebury, VT* \|\| *September 2015 -- Present*
+    * Serve as co-head of MiddLab, the library digital scholarship team
+    * Serve as co-head of the Library Web and User Experience team
     * Provide general research and technology assistance to students, faculty, and staff, and specialized assistance to those working with data, particularly in the social sciences and humanities.
     * Assist with projects involving finding, acquiring, managing, interpreting, analyzing, and visualizing both quantitative and qualitative data.
     * Provide leadership in planning, support, and implementation of digital scholarship support.
@@ -48,7 +50,7 @@ Software & Coding Skills
 * **Advanced**
   * Bash/Zsh, HTML, OpenRefine, R/RStudio
 * **Intermediate**
-  * ArcGIS Online, CSS, EndNote, Illustrator, Photoshop, Python, QGIS, Tableau, Stata
+  * ArcGIS Online, CSS, EndNote, Illustrator, Jekyll, Photoshop, Python, QGIS, Tableau, Stata, Wordpress
 * **Fundamentals**
   * ArcGIS Pro, Javascript, LaTeX, Leaflet, MySQL, NVivo, Omeka, PHP, Ruby, SPSS
 
