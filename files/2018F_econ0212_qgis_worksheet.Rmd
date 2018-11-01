@@ -1,0 +1,99 @@
+---
+title: "Econ 212 -- QGIS Workshop"
+author: "ryan clement"
+date: "October 31, 2018"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+bibliography: bibliography.bib
+link_citations: true
+csl: apa.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+[Download a PDF of this worksheet](https://rkclement.github.io/files/2018F_econ0212_qgis_worksheet.pdf)
+## Data
+
+We have several datasets we will be looking at in this workshop. These are available in the class middfiles folder.
+
+- `2010nighttime_lights`
+  - These data, retrieved from https://ngdc.noaa.gov/eog/dmsp/downloadV4composites.html, is derived from the average visible light multiplied by the frequency of detection. This normalizes the values across changes in the persistence of lighting (e.g. a light that is only detected 50% of the time has its value multiplied by 50%).
+
+- `2010dhs_household_nigeria` & `2010dhs_individual_nigeria`
+  - These datasets are downloaded from the DHS website, at https://dhsprogram.com/data/Getting-Started.cfm. **THESE DATA CANNOT BE REDISTRIBUTED OUTSIDE OF THIS ECON 212 CLASS.** If you would like to get access to DHS data for your own work, you will need to apply for access yourself. You can speak to Ryan Clement, Data Services Librarian, about doing this if you have any questions.
+  
+- `Flares_Nigeria_1`
+  - These data, downloaded from https://ngdc.noaa.gov/eog/interest/gas_flares_countries_shapefiles.html, are used to correct the nighttime lights data for the presence of gas flares. They are available from the above website for countries with significant gas flaring.
+  
+- `nigeria_administrative_boundaries`
+  - These data are downloaded from GADM, at https://gadm.org/data.html. Their mission is provide maps/data for the administrative areas of all countries, at all levels of subdivision.
+
+## Working in QGIS
+1. Open QGIS, go to `Project > New`, then `Save As`, and save the QGIS file in your working directory.
+2. Add your first layer: `Layer > Add Layer > Add Raster Layer`
+    a. The raster layer you're going to add is:  
+    `/2010nighttime_lights/F182010.v4d_web.stable_lights.avg_vis.tif.gz`
+    b. Right-click on the layer, and open the `Properties`; change the layer name to something easier to read, like `nighttime_lights`
+3. Add your second layer: `Layer > Add Layer > Add Vector Layer`
+    a. The vector layer you're going to add is:  
+    `/nigeria_administrative_boundaries/gadm36_NGA_shp.zip`
+    b. Add `Layer ID` "1" - the one with 37 features
+    c. Right-click on the layer, and open the `Properties`; change the layer name to something easier to read, like `nigeria_state_borders`
+    d. Under `Symbology`, click on "Simple Fill" > change the "Fill Color" to "Transparent Fill" (click the small down arrow)
+    e. Under `Symbology`, change the "Stroke Color" to something easier to see on the black background (e.g. Red)
+    f. Right-click the state borders layer and "Zoom to Layer"
+4. Add the last layer: `Layer > Add Layer > Add Vector Layer`
+    a. The vector layer you're going to add (as a directory) is:  
+    `/Flares_Nigeria_1/`
+5. Now, to account for the flares:
+    a. `Vector > Geoprocessing Tools > Difference`
+    b. Your "Input Layer" is the Nigerian state borders, your "Difference Layer" is the Flares layer
+    c. Rename your layer, fix the fill/stroke colors
+6. Now, to get rid of the extraneous nighttime light data:
+    a. `Raster > Extraction > Clip Raster by Mask Layer`
+    b. Your nighttime lights layer is the "Input Layer," the clipped Nigerian state borders layer from the last step is the "Mask Layer"
+    c. Rename your layer
+7. Now, to add data about the median light level within a state's borders to the state borders table
+    a. `Processing > Toolbox > Raster Analysis > Zonal statistics`
+    b. Raster layer is your clipped nighttime lights from step 6, "Vector layer containing zones" is your clipped state borders layer
+    c. add an appropriate prefix to the output columns
+8. We need to do some light data editing before we export our CSV
+    a. Open up the attribute table for the clipped state borders layer
+    b. Toggle editing mode, toggle multi-editing mode
+    c. In the drop-down, choose `NAME_1`, and enter `lower( NAME_1)` in the box; click "Update All"
+    d. Now turn off multi-editing mode, click on the entry for `federal capital territory`, and change it to `fct-abuja` (to match the DHS dataset)
+    e. Open up `Properties > Source Fields`, double-click on `NAME_1` and rename it `sstate` to match the DHS dataset
+9. Now to output the table we've created as a CSV
+    a. Right-click on the layer > `Export > Save Features As`
+    b. Choose CSV as the format, name the output file, click OK
+9. Before you quit QGIS, you need to save any "temporary scratch layers" that you want to keep > do this!
+
+## Working in Stata
+1. Open the individual DHS dataset:  
+`use "/Users/rclement/Desktop/2018_econ212_gis/2010dhs_individual_nigeria/NGIR61FL.DTA"`
+2. Collapse your variable of interest by state:  
+`collapse variable, by(sstate)`
+3. Rename your collapsed variable to something more understandable:  
+`rename variable meaningful_name`
+4. Decode your state variable to a string to match the nightlights data:  
+`decode variable, generate(new_variable)`
+5. Rename your new string state variable to match the nightlights data:  
+`drop variable`  
+`rename new_variable variable`
+6. Save your collapsed dataset:  
+`save "/2010dhs_individual_nigeria/collapsed_dataset.dta", replace`
+7. Bring in your nightlights dataset:  
+`import delimited "/directory_location/nightlights.csv", encoding(ISO-8859-1)clear`
+8. Merge with your collapsed data:  
+`merge 1:1 sstate using "/2010dhs_individual_nigeria/collapsed_dataset.dta"`
+9. Do your analysis!
+
+## References
+
+---
+nocite: '@*'
+...
