@@ -79,7 +79,7 @@ Professional Affiliations
   * Digital Library Federation (DLF) - Institutional Member, active in annual conferences and other activities
 * *Since 2014*
   * International Association for Social Science Information Services & Technology (IASSIST)
-  * Inter-uiversity Consoritum for Political and Social Research (ICPSR) - Official/Designated Representative
+  * Inter-university Consoritum for Political and Social Research (ICPSR) - Official/Designated Representative
 * *Since 2011*
   * American Library Association (ALA)
   * Association of College & Research Libraries (ACRL)
