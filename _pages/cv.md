@@ -25,7 +25,7 @@ Work experience
 ======
 * **Data Services Librarian**
   * *Middlebury College, Middlebury, VT* \|\| *September 2015 -- Present*
-    * Serve as co-head of MiddLab, the library digital scholarship team
+    * Serve as co-head of MiddLab, the library digital scholarship team (2015 -- present)
     * Serve as co-head of the Library Web and User Experience team
     * Provide general research and technology assistance to students, faculty, and staff, and specialized assistance to those working with data, particularly in the social sciences and humanities.
     * Assist with projects involving finding, acquiring, managing, interpreting, analyzing, and visualizing both quantitative and qualitative data.
