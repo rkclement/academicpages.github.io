@@ -54,11 +54,11 @@ Work experience
 Software & Coding Skills
 ======
 * **Expert**
-  * Google Apps, LibGuides, MS Office, Zotero
+  * Google Apps, LibGuides, MS Office, OpenRefine, Zotero
 * **Advanced**
-  * Bash/Zsh, HTML, OpenRefine, R/RStudio
+  * Bash/Zsh, R/RStudio, Python
 * **Intermediate**
-  * ArcGIS Online, CSS, EndNote, Illustrator, Jekyll, Photoshop, Python, QGIS, Tableau, Stata, Wordpress
+  * ArcGIS Online, HTML/CSS, EndNote, Illustrator, Jekyll, Photoshop, QGIS, Tableau, Stata, Wordpress
 * **Fundamentals**
   * ArcGIS Pro, Javascript, LaTeX, Leaflet, MySQL, NVivo, Omeka, PHP, Ruby, SPSS
 
