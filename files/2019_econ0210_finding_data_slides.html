@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Economic Statistics</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Ryan Clement" />
+    <meta name="date" content="2019-03-18" />
+    <link href="libs/remark-css/middlebury.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Economic Statistics
+## Library Session:<br/>Finding Data
+### Ryan Clement
+### March 18, 2019
+
+---
+
+class: middle
+
+
+# who am I?
+
+* I'm Ryan Clement, the Data Services Librarian
+* I use he/him/his pronouns
+* I work with Economics, Geography, Sociology/Anthropology, and Philosophy
+* I help people find and use data
+* I can help with all stages of your research!
+* You can find more at [go/ryan/](http://go.middlebury.edu/ryan)
+
+---
+class: middle
+
+# what are we covering today?
+
+* organizing your data search
+* codebooks
+* some important data sources
+* dirty, unprepared data
+
+---
+class: inverse, center, middle
+
+# before you start
+
+---
+class: center, middle
+
+# Structure of a dataset
+
+Data files (What format? How many? How are they organized?)
+
+Scripts to process the data (sometimes, e.g. .do files, etc)
+
+Codebook
+
+---
+class: center, middle
+
+# Structure of a data file
+
+Rows and columns - what is in each *ideally*?
+
+Different types of variables -- id vs observation (e.g. what vs how much)
+
+Variable names (machine vs human readable?)
+
+Missing data
+
+---
+class: center, middle
+
+# Structure of a codebook
+
+Column locations and widths for each variable (if necessary)
+
+What universe does the data cover?
+
+Response codes for each variable, along with nonresponse or missing data
+
+Exact questions and skip patterns (if it is a complex survey)
+
+etc...
+
+---
+class: inverse, center, middle
+
+# organizing your search
+
+---
+class: center, middle
+
+# Think of what you need
+
+What variables do I need?
+
+What level of observation do I need? Do I need aggregate data or microdata?
+
+What time period/frequency do I need?
+
+---
+class: center, middle
+
+# Who has what you need?
+
+"Who cares about this enough to collect and/or keep it?"
+
+What type of organization are they? Educational, governmental, private, etc?
+
+If not public/government organization, how valuable is the data?
+
+Are there privacy/confidentiality issues?
+
+---
+class: center, middle
+
+# Searching for data on Google?
+
+Not the place to *start*.
+
+Remember the "who would care rule" -- look for them!
+
+Be as specific as possible in search terms (e.g. "microdata," "by county," etc.)
+
+---
+class: middle
+
+# What are they types of studies
+
+* Cross-sectional
+  * Collected only once, but may be for many different individuals/households/firms
+  * Many public opinion surveys are cross-sectional
+  
+* Time Series
+  * Studies the same variable(s) over time
+  * The Census or the National Health Interview Study are examples
+  * The questions/variables *and* the group studied remain mostly the same over time, but they individual respondents may vary
+  
+* Longitudinal Studies (e.g. Panel Studies)
+  * Conducted repeatedly for the same group of respondents over time
+  * Allows examining changes over the lifespan
+  * Panel Study of Income Dynamics is an example
+
+---
+class: inverse, center, middle
+
+# (some) data sources
+
+---
+class: middle
+
+# The Census/American Community Survey
+
+* Some access points:
+  * [Social Explorer](http://go.middlebury.edu/socialexplorer) (for tables and many different geographies)
+  * IPUMS (historical, harmonized, microdata)
+  * [NHGIS](https://www.nhgis.org/) (historical spatial data)
+  * [The Opportunity Atlas](https://www.opportunityatlas.org/)
+  
+---
+class: middle
+
+# Tips for working with the Census
+
+* When working with historical/time series data:
+  * Watch for changing values
+  * Watch for changing geographic coverage
+  * Watch for changing questions
+  * [Racebox](http://racebox.org/)
+
+* Which ACS is right for you?
+  * 1-, 3-, or 5-year ACS
+  * The 3-year ACS is going away
+
+---
+class: middle
+
+# Add Health
+
+* &lt;https://www.cpc.unc.edu/projects/addhealth&gt;
+* Longitudinal study of students in grades 7-12 in 1994-95 (most recent follow up in 2008)
+* Survey data on social, economic, psychological and physical well-being
+  * Contextual data on family, neighborhood, community, school, friendships, peer groups, and romantic relationships
+* Public use and restricted versions of the data; public use available through ICPSR
+
+---
+class: middle
+
+# Other government sources
+* [Bureau of Economic Analysis (BEA)](http://www.bea.gov/)
+* [Bureau of Labor Statistics (BLS)](http://www.bls.gov/)
+* Federal Reserve Economic Data ([FRED](http://research.stlouisfed.org/fred2/)/[ALFRED](https://alfred.stlouisfed.org/))
+
+---
+class: middle
+
+# Panel Study of Income Dynamics
+
+* &lt;https://psidonline.isr.umich.edu/&gt;
+* Some data is public, some is restricted
+* Longest running longitudinal household survey in the world (since 1968)
+
+---
+class: inverse, center, middle
+
+# dirty, unprepared data
+
+---
+class: middle
+
+# How is data dirty or unprepared?
+
+* Missing data
+* Bad data
+* Unclear data
+* Poorly organized
+
+---
+
+class: center, middle
+
+# Thanks!
+
+Remember, you can find me at [go/ryan/](http://go.middlebury.edu/ryan)!
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
